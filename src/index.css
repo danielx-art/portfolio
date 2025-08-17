@@ -1,0 +1,155 @@
+@font-face {
+  font-family: "Fira Code";
+  src: url("..src/assets/fonts/FiraCode-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+@import "tailwindcss";
+
+@theme {
+  --background: 8 10 31;
+  --bg-vfx: 0 0 0;
+  --accent: 199 46 49;
+  --primary: 69 81 196;
+  --secondary: 196 164 49;
+  --text: 230 232 240;
+  --neutral: 35 46 38;
+  --boids-calm: 69 81 196 25;
+  --boids-excited: 69 81 196 100;
+  --boids-agressive: 199 46 49 80;
+
+  --color-background: rgb(var(--background));
+  --color-accent: rgb(var(--accent));
+  --color-primary: rgb(var(--primary));
+  --color-secondary: rgb(var(--secondary));
+  --color-text: rgb(var(--text));
+  --color-neutral: rgb(var(--neutral));
+
+  --font-fira: "Fira Code", ui-monospace, monospace;
+
+  @keyframes zinzout {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    90% {
+      transform: scale(1.05);
+    }
+  }
+  --animate-zinzout: zinzout 3s ease-in;
+
+  --background-image-texture: url("https://i.ibb.co/FhfBXMD/static.jpg");
+}
+
+:root {
+  --background: 8 10 31;
+  --bg-vfx: 199 46 49;
+  --accent: 199 46 49;
+  --primary: 69 81 196;
+  --secondary: 196 164 49;
+  --text: 230 232 240;
+  --neutral: 35 46 38;
+
+  --boids-calm: 69 81 196 25;
+  --boids-excited: 69 81 196 100;
+  --boids-agressive: 199 46 49 80;
+}
+
+.light {
+  --background: 247 248 250;
+  --bg-vfx: 26 28 43;
+  --accent: 176 32 35;
+  --primary: 58 70 168;
+  --secondary: 166 133 31;
+  --text: 26 28 43;
+  --neutral: 62 91 74;
+
+  --boids-calm: 26 28 43 15;
+  --boids-excited: 26 28 43 30;
+  --boids-agressive: 176 32 35 50;
+}
+
+.dark {
+  --background: 8 10 31;
+  --bg-vfx: 199 46 49;
+  --accent: 199 46 49;
+  --primary: 69 81 196;
+  --secondary: 196 164 49;
+  --text: 230 232 240;
+  --neutral: 35 46 38;
+
+  --boids-calm: 69 81 196 25;
+  --boids-excited: 69 81 196 100;
+  --boids-agressive: 199 46 49 80;
+}
+
+* {
+  overscroll-behavior: contain;
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: rgb(var(--background));
+}
+
+#root {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  --pallete4aA: #080a1f60; /* deeppurple */
+  --pallete4b: #c72e31; /* coolred */
+  --pallete4c: #4551c4; /* purpleblue */
+  --pallete4cA: #4551c440; /* purplebluealpha */
+  --pallete4d: #c4a431; /* mustard */
+  --pallete4e: #e6e8f0; /* softwhite */
+  --pallete4f: #232e26; /* boardgreen */
+}
+
+.background-vfx {
+  position: fixed;
+  inset: 0;
+  height: 90dvh;
+  min-height: 90dvh;
+  opacity: 0.2;
+  background-blend-mode: lighten;
+  background-image: linear-gradient(
+    to top left,
+    rgb(var(--bg-vfx)),
+    rgb(199 46 49 / 0)
+  );
+  background-attachment: fixed;
+  z-index: -1;
+  user-select: none;
+}
+
+.background-vfx::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  height: 90dvh;
+  min-height: 90dvh;
+  background: url("https://i.ibb.co/FhfBXMD/static.jpg") repeat center;
+  background-attachment: fixed;
+  mix-blend-mode: overlay;
+  opacity: 0.2;
+  z-index: -1;
+  user-select: none;
+}
+
+code {
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
