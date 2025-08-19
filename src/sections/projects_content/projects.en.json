@@ -1,0 +1,29 @@
+[
+  {
+    "title": "Particles And Random Physics",
+    "description": "Made as an education tool, this is a 3D environment, where you can interact with a particle system behaving in accord to some random physics that comes with a short description.",
+    "techs": ["React", "Next", "Typescript", "Three"],
+    "links": {
+      "page": "https://particlesrandomphysics.vercel.app/",
+      "github": "https://github.com/danielx-art/particlesrandomphysics"
+    }
+  },
+  {
+    "title": "GeoSimples",
+    "description": "Tool designed for creation of simple and standardized images of geometric figures, mainly aimed at educative content creation.",
+    "techs": ["React", "Next", "Typescript", "Tailwind", "Zustand"],
+    "links": {
+      "page": "https://geosimples.vercel.app/",
+      "github": "https://github.com/danielx-art/tikzgenerator"
+    }
+  },
+  {
+    "title": "Rick and Morty Character Search",
+    "description": "A Rick'n'Morty characters mural with custom search and filter parameters.",
+    "techs": ["React", "Next", "Typescript", "Tanstack Query"],
+    "links": {
+      "page": "https://ricknmortychallenge.vercel.app/",
+      "github": "https://github.com/danielx-art/ricknmortychallenge"
+    }
+  }
+]

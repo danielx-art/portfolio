@@ -5,13 +5,14 @@ import boids from "./resources/boids";
 import type { Tparticle } from "./resources/types";
 import { transformRGBtoRGBA, lerpStretchClamp } from "./resources/helpers";
 
-export function initBoids(getScrollVelocity: ()=>number) {
+export function initBoids(getScrollVelocity: () => number) {
   let container = document.getElementById("canvas-container");
   if (!container) {
     container = document.createElement("div");
     container.id = "canvas-container";
     container.className =
-      "absolute -z-10 top-0 left-0 w-full h-full overflow-hidden";
+      "absolute -z-10 top-0 left-0 w-full min-h-screen overflow-hidden";
+
     document.body.appendChild(container);
   }
 
@@ -109,9 +110,12 @@ export function initBoids(getScrollVelocity: ()=>number) {
     btn.addEventListener("mouseleave", buttonLeave);
   });
 
+  //-----SETUP CANVAS-------
   function setupCanvas() {
     w = window.innerWidth;
-    h = canvasContainer.clientHeight;
+    //h = document.documentElement.scrollHeight;
+    const contentHeight = document.body.scrollHeight;
+    h = Math.max(window.innerHeight, contentHeight);
     herocanvas.width = w;
     herocanvas.height = h;
     gridFontSize =
@@ -121,7 +125,7 @@ export function initBoids(getScrollVelocity: ()=>number) {
     for (let n = 0; n < num; n++) {
       const randomPosition = vec(
         10 + Math.random() * (w - 20),
-        10 + Math.random() * (h - 20),
+        10 + Math.random() * (window.innerHeight * 0.9 - 20),
         0
       );
       const newParticle = createParticle({
@@ -136,23 +140,35 @@ export function initBoids(getScrollVelocity: ()=>number) {
   }
 
   const update = () => {
-    
     const scrollVelocity = getScrollVelocity();
 
     for (let i = 0; i < num; i++) {
-      const thisParticle = particles[i];
       const tooClose = particles.filter(
         (particle) =>
           vec()
             .copy(particle.position)
-            .distanceToSquared(thisParticle.position) < safeRadius
+            .distanceToSquared(particles[i].position) < safeRadius
       );
       const agents = particles.filter((x) => !tooClose.includes(x));
       particles[i].applyForces(agents);
 
-      if(Math.floor(scrollVelocity) != 0) {
+      //scrolling force
+      if (Math.floor(scrollVelocity) != 0) {
         const yForce = vec(0, scrollVelocity).limit(0.07);
         particles[i].vel.add(yForce);
+      }
+      //mouse follow force
+      const distanceToMouse = vec()
+        .copy(particles[i].position)
+        .sub(vec(mouse.x, mouse.y))
+        .mag();
+      if (distanceToMouse < 400) {
+        const followForce = vec()
+          .copy(particles[i].position)
+          .sub(vec().copy(vec(mouse.x, mouse.y)))
+          .mult(-0.1)
+          .limit(100);
+        particles[i].acl.add(followForce);
       }
 
       if (isDragging) {

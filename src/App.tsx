@@ -6,6 +6,8 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 import { useEffect, useRef } from "react";
 import { UserPreferencesProvider } from "./context/UserPreferencesProvider";
 import { NavMenu } from "./components/NavMenu";
+import BoidsCanvas from "./components/BoidsCanvas";
+import { Footer } from "./sections/Footer";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -32,6 +34,8 @@ function App() {
           <NavMenu />
           <Hero />
           <Projects />
+          <Footer />
+          <BoidsCanvas />
         </UserPreferencesProvider>
       </ReactLenis>
     </>

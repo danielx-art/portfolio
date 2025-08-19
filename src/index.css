@@ -45,7 +45,6 @@
 
 :root {
   --background: 8 10 31;
-  --bg-vfx: 199 46 49;
   --accent: 199 46 49;
   --primary: 69 81 196;
   --secondary: 196 164 49;
@@ -55,11 +54,13 @@
   --boids-calm: 69 81 196 25;
   --boids-excited: 69 81 196 100;
   --boids-agressive: 199 46 49 80;
+
+  --bg-vfx1: 199 46 49;
+  --bg-vfx2: 0 0 0;
 }
 
 .light {
   --background: 247 248 250;
-  --bg-vfx: 26 28 43;
   --accent: 176 32 35;
   --primary: 58 70 168;
   --secondary: 166 133 31;
@@ -69,11 +70,13 @@
   --boids-calm: 26 28 43 15;
   --boids-excited: 26 28 43 30;
   --boids-agressive: 176 32 35 50;
+
+  --bg-vfx1: 255 255 255;
+  --bg-vfx2: 26 28 43 /0.5;
 }
 
 .dark {
   --background: 8 10 31;
-  --bg-vfx: 199 46 49;
   --accent: 199 46 49;
   --primary: 69 81 196;
   --secondary: 196 164 49;
@@ -83,6 +86,9 @@
   --boids-calm: 69 81 196 25;
   --boids-excited: 69 81 196 100;
   --boids-agressive: 199 46 49 80;
+
+  --bg-vfx1: 199 46 49;
+  --bg-vfx2: 0 0 0 /0;
 }
 
 * {
@@ -106,9 +112,6 @@ body {
 }
 
 #root {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   --pallete4aA: #080a1f60; /* deeppurple */
   --pallete4b: #c72e31; /* coolred */
   --pallete4c: #4551c4; /* purpleblue */
@@ -119,7 +122,7 @@ body {
 }
 
 .background-vfx {
-  position: fixed;
+  position: absolute;
   inset: 0;
   height: 90dvh;
   min-height: 90dvh;
@@ -127,8 +130,8 @@ body {
   background-blend-mode: lighten;
   background-image: linear-gradient(
     to top left,
-    rgb(var(--bg-vfx)),
-    rgb(199 46 49 / 0)
+    rgb(var(--bg-vfx1)),
+    rgb(var(--bg-vfx2))
   );
   background-attachment: fixed;
   z-index: -1;
@@ -137,14 +140,14 @@ body {
 
 .background-vfx::after {
   content: "";
-  position: fixed;
+  position: absolute;
   inset: 0;
   height: 90dvh;
   min-height: 90dvh;
-  background: url("https://i.ibb.co/FhfBXMD/static.jpg") repeat center;
+  background: url("./static-background-texture.jpg") repeat center;
   background-attachment: fixed;
   mix-blend-mode: overlay;
-  opacity: 0.2;
+  opacity: 0.5;
   z-index: -1;
   user-select: none;
 }

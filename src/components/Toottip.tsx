@@ -15,7 +15,7 @@ export const Tooltip: React.FC<TooltipProps> = ({
   return (
     <div className="group relative">
         {children}
-      <span className={cn("group-hover:opacity-100 transition-opacity bg-pallete4cA px-1 text-sm text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 translate-y-1/2 opacity-0 mx-auto pointer-events-none", tooltipClassName)}>
+      <span className={cn("group-hover:opacity-100 transition-opacity bg-pallete4cA px-1 text-sm text-text bg-background rounded-md absolute left-1/2 -translate-x-1/2 translate-y-1/2 opacity-0 mx-auto pointer-events-none", tooltipClassName)}>
         {text}
       </span>
     </div>

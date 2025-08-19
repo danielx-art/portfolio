@@ -1,13 +1,10 @@
 import { useEffect, useRef } from "react";
 import { useLenis } from "lenis/react";
 import { initBoids } from "../animations/boids-animation";
-import { useUserPreferences } from "../context/useUserPreferences";
-
 
 export default function BoidsCanvas() {
   const velocityRef = useRef(0);
   const lenis = useLenis();
-  const { theme } = useUserPreferences();
 
   useEffect(() => {
     if (!lenis) return;
@@ -16,20 +13,20 @@ export default function BoidsCanvas() {
       velocityRef.current = velocity;
     };
 
-    lenis.on("scroll", onScroll);
-
     const cleanupBoids = initBoids(() => velocityRef.current);
+
+    lenis.on("scroll", onScroll);
 
     return () => {
       lenis.off("scroll", onScroll);
       cleanupBoids();
     };
-  }, [lenis, theme]);
+  }, [lenis]);
 
   return (
     <div
       id="canvas-container"
-      className="absolute -z-10 top-0 left-0 w-full h-[90dvh]"
+      className="absolute -z-10 top-0 left-0 w-full min-h-screen"
     >
       {/*here canvas will be added*/}
     </div>
