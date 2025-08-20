@@ -13,7 +13,7 @@ export const ProjectCard: React.FC<{
   lang: Language;
   index: number;
 }> = ({ p, lang, index }) => {
-  const thumbSrc = `/project-thumbs/${index + 1}.png`;
+  const thumbSrc = `${import.meta.env.BASE_URL}project-thumbs/${index + 1}.png`;
 
   const thumbLink = p.links.page || p.links.github || null;
 

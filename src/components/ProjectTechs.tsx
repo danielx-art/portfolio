@@ -32,7 +32,8 @@ const TechLogo: React.FC<{ tech: string }> = ({ tech }) => {
     theme === "light" ? logoOverrides[tech] ?? "" : "";
 
   const fileName = tech.replace(/\s+/g, "");
-  const src = `/tech-logos/${fileName}.png`;
+  const base = import.meta.env.BASE_URL;
+  const src = `${base}/tech-logos/${fileName}.png`;
 
   return (
     <Tooltip text={tech}>
