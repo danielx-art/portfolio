@@ -39,8 +39,6 @@
     }
   }
   --animate-zinzout: zinzout 3s ease-in;
-
-  --background-image-texture: url("https://i.ibb.co/FhfBXMD/static.jpg");
 }
 
 :root {
@@ -77,11 +75,11 @@
 
 .dark {
   --background: 8 10 31;
+  --text: 235 237 245;
   --accent: 199 46 49;
   --primary: 69 81 196;
   --secondary: 196 164 49;
-  --text: 230 232 240;
-  --neutral: 35 46 38;
+  --neutral: 90 100 110;
 
   --boids-calm: 69 81 196 25;
   --boids-excited: 69 81 196 100;

@@ -2,13 +2,13 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="512"
-   height="512"
-   viewBox="0 0 135.46666 135.46667"
+   width="256"
+   height="256"
+   viewBox="0 0 67.733332 67.733333"
    version="1.1"
    id="svg1"
-   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
    sodipodi:docname="favicon.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -23,60 +23,94 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="1.2105399"
-     inkscape:cx="247.82331"
-     inkscape:cy="259.80143"
-     inkscape:window-width="1440"
-     inkscape:window-height="877"
-     inkscape:window-x="1358"
+     inkscape:zoom="1.8280303"
+     inkscape:cx="78.226274"
+     inkscape:cy="128.82719"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="g3" />
   <defs
      id="defs1" />
   <g
-     inkscape:label="Camada 1"
+     inkscape:label="main"
      inkscape:groupmode="layer"
-     id="layer1">
-    <circle
-       style="fill:#ffff00;fill-opacity:0.5;stroke-width:0.540519"
-       id="path1-8-1-2"
-       cx="-67.809029"
-       cy="-66.509766"
-       transform="scale(-1)"
-       r="48" />
-    <circle
-       style="fill:#00ffff;fill-opacity:0.5;stroke-width:0.540519"
-       id="path1-8"
-       cx="-68.672447"
-       cy="-68.004662"
-       transform="scale(-1)"
-       r="48" />
-    <circle
-       style="fill:#ff00fe;fill-opacity:0.502994;stroke-width:0.540519"
-       id="path1-8-1"
-       cx="-67.326668"
-       cy="-68.488037"
-       transform="scale(-1)"
-       r="48" />
-    <circle
-       style="fill:#000000;stroke-width:0.540519"
-       id="path1"
-       cx="-67.73333"
-       cy="-67.73333"
-       transform="scale(-1)"
-       r="48"
+     id="g3"
+     sodipodi:insensitive="true">
+    <path
+       d="m 52.05309,66.976486 -9.321674,0.43421 -2.671365,-2.997739 -16.478718,2.45 L 20.041547,64.154692 19.783281,62.045674 14.63441,58.747553 17.078717,33.066384 21.969326,32.291586 21.323663,26.497051 38.57814,25.593122 37.028545,6.6434863 47.852035,1.2858491 52.549716,5.0072733 Z M 40.722592,48.317441 39.17699,36.564272 29.148814,38.708415 30.23774,49.886189 Z"
+       id="path9"
+       style="font-size:50.8px;font-family:'Fixedsys Excelsior 3.01';-inkscape-font-specification:'Fixedsys Excelsior 3.01, Normal';display:inline;fill:#4551c4;fill-opacity:1;stroke-width:7.55387;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+       aria-label="d"
+       sodipodi:nodetypes="cccccccccccccccccccc"
+       inkscape:label="shadow cp"
        sodipodi:insensitive="true" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:69.1444px;font-family:'TeX Gyre DejaVu Math';-inkscape-font-specification:'TeX Gyre DejaVu Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke-width:0.264583"
-       x="44.881134"
-       y="93.524139"
-       id="text1"><tspan
-         sodipodi:role="line"
-         id="tspan1"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:69.1444px;font-family:'TeX Gyre DejaVu Math';-inkscape-font-specification:'TeX Gyre DejaVu Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
-         x="44.881134"
-         y="93.524139">d</tspan></text>
+    <path
+       d="m 52.05309,66.976486 -9.321674,0.43421 -2.671365,-2.997739 -16.478718,2.45 L 20.041547,64.154692 19.783281,62.045674 14.63441,58.747553 17.078717,33.066384 21.969326,32.291586 21.323663,26.497051 38.57814,25.593122 37.028545,6.6434863 47.852035,1.2858491 52.549716,5.0072733 Z M 40.722592,48.317441 39.17699,36.564272 29.148814,38.708415 30.23774,49.886189 Z"
+       id="path10"
+       style="font-size:50.8px;font-family:'Fixedsys Excelsior 3.01';-inkscape-font-specification:'Fixedsys Excelsior 3.01, Normal';display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.05833333;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       aria-label="d"
+       sodipodi:nodetypes="cccccccccccccccccccc"
+       inkscape:label="shadow countour" />
+    <path
+       d="M 48.368567,64.412957 H 40.060051 L 39.628632,61.830304 20.041547,64.154692 19.525016,58.489287 14.63441,58.747553 14.117878,30.937066 19.008487,30.162268 18.362824,24.367733 35.617301,23.463804 34.067706,4.5141674 47.852035,1.2858491 Z M 37.761753,46.188123 36.650362,33.132322 25.319554,34.552781 25.684796,47.033187 Z"
+       id="path3"
+       style="font-size:50.8px;font-family:'Fixedsys Excelsior 3.01';-inkscape-font-specification:'Fixedsys Excelsior 3.01, Normal';fill:#c72e31;fill-opacity:1;stroke-width:7.55387;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+       aria-label="d"
+       sodipodi:nodetypes="cccccccccccccccccc"
+       inkscape:label="main cp"
+       sodipodi:insensitive="true" />
+    <path
+       d="M 48.368567,64.412957 H 40.060051 L 39.628632,61.830304 20.041547,64.154692 19.525016,58.489287 14.63441,58.747553 14.117878,30.937066 19.008487,30.162268 18.362824,24.367733 35.617301,23.463804 34.067706,4.5141674 47.852035,1.2858491 Z M 37.761753,46.188123 36.650362,33.132322 25.319554,34.552781 25.684796,47.033187 Z"
+       id="path11"
+       style="font-size:50.8px;font-family:'Fixedsys Excelsior 3.01';-inkscape-font-specification:'Fixedsys Excelsior 3.01, Normal';display:inline;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.05833333;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       aria-label="d"
+       sodipodi:nodetypes="cccccccccccccccccc"
+       inkscape:label="main countour" />
+    <path
+       d="M 51.329406,66.542275 H 43.02089 L 42.589471,63.959622 23.002386,66.28401 22.485855,60.618605 17.595249,60.876871 17.078717,33.066384 21.969326,32.291586 21.323663,26.497051 38.57814,25.593122 37.028545,6.6434863 50.812874,3.415168 Z M 40.722592,48.317441 39.611201,35.26164 28.280393,36.682099 28.645635,49.162505 Z"
+       id="path3-8"
+       style="font-size:50.8px;font-family:'Fixedsys Excelsior 3.01';-inkscape-font-specification:'Fixedsys Excelsior 3.01, Normal';display:none;stroke-width:7.55387;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+       aria-label="d"
+       sodipodi:nodetypes="cccccccccccccccccc"
+       inkscape:label="shadow"
+       sodipodi:insensitive="true" />
+    <path
+       d="M 48.368567,64.412957 H 40.060051 L 39.628632,61.830304 20.041547,64.154692 19.525016,58.489287 14.63441,58.747553 14.117878,30.937066 19.008487,30.162268 18.362824,24.367733 35.617301,23.463804 34.067706,4.5141674 47.852035,1.2858491 Z M 37.761753,46.188123 36.650362,33.132322 25.319554,34.552781 25.684796,47.033187 Z"
+       id="path4"
+       style="font-size:50.8px;font-family:'Fixedsys Excelsior 3.01';-inkscape-font-specification:'Fixedsys Excelsior 3.01, Normal';display:none;fill:#c72e31;fill-opacity:1;stroke-width:7.55387;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+       aria-label="d"
+       sodipodi:nodetypes="cccccccccccccccccc"
+       inkscape:label="main"
+       sodipodi:insensitive="true" />
+  </g>
+  <g
+     inkscape:label="original"
+     inkscape:groupmode="layer"
+     id="layer1"
+     sodipodi:insensitive="true"
+     style="display:none">
+    <path
+       d="m 43.067106,50.36842 h -15.875 v -3.175 h -3.175 v -15.875 h 3.175 v -3.175 h 9.525 v -6.35 h 6.35 z m -6.35,-3.175 v -15.875 h -6.35 v 15.875 z"
+       id="text1"
+       style="font-size:50.8px;font-family:'Fixedsys Excelsior 3.01';-inkscape-font-specification:'Fixedsys Excelsior 3.01, Normal';stroke-width:4.23333;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+       aria-label="d" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="guides"
+     style="display:none"
+     sodipodi:insensitive="true">
+    <path
+       style="display:inline;fill:none;stroke:#ff77ff;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       d="m 26.342105,27.934211 0.217106,3.111841 -2.894737,0.361841 0.361842,15.631581 h 2.894736 l 0.07237,3.111841 15.05263,-1.881579 L 41.17763,27.06579 Z"
+       id="path1" />
+    <path
+       style="fill:none;stroke:#ff77ff;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+       d="M 34.736841,17.006579 38.138158,50.223684 42.98684,50.368422 42.624999,15.125 Z"
+       id="path2" />
   </g>
 </svg>

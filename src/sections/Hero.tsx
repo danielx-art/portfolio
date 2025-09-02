@@ -8,7 +8,8 @@ type HeroContent = {
   title: string;
   subtitle: string;
   text: string;
-  buttonText: string;
+  btnProjects: string;
+  btnBlog: string
 };
 
 type HeroProps = {
@@ -20,13 +21,15 @@ const content: Record<string, HeroContent> = {
     title: "Daniel",
     subtitle: "Desenvolvedor Fullstack",
     text: "Oi! Gosto de criar coisas legais, interessantes, desafiadoras e bonitas, seja bem vinde. Aqui você vai encontrar alguns projetos que misturam tecnologia, educação e arte — e um pouco sobre mim.",
-    buttonText: "Vem ver",
+    btnProjects: "Vem ver",
+    btnBlog: "Blog" 
   },
   en: {
     title: "Daniel",
     subtitle: "Fullstack developer",
     text: "Hi! I like to create cool, interesting, challenging and beautifull stuff, be welcome. Here you'll find projects that blend tech, education and some art — and a little about me.",
-    buttonText: "Take a look!",
+    btnProjects: "Take a look!",
+    btnBlog: "Blog" 
   },
 };
 
@@ -78,15 +81,30 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
              focus:outline-offset-2 focus:outline focus:outline-text 
              group
              transition-all duration-300 ease-in-out"
-              aria-label={currentContent.buttonText}
+              aria-label={currentContent.btnProjects}
               onClick={handleScrollToProjects}
             >
               <span className="group-hover:rotate-90 transition-transform duration-300 ease-in-out">
                 {"> "}
               </span>
-              <span className="pl-1">{currentContent.buttonText}</span>
+              <span className="pl-1">{currentContent.btnProjects}</span>
             </button>
-            <ContactButton />
+            <button
+              className="flex flex-nowrap px-5 py-2 rounded-sm font-fira font-bold text-lg  
+             text-primary hover:text-background 
+             hover:bg-primary bg-transparent 
+             outline-dashed outline-2 hover:outline-transparent outline-primary 
+             shadow-lg cursor-pointer 
+             focus:outline-offset-2 focus:outline focus:outline-text 
+             outline-offset-[-2px] opacity-100 hover:opacity-100
+             transition-all duration-300 ease-in-out"
+              aria-label={currentContent.btnBlog}
+            >
+              <a href={`https://danielx-art.github.io/journal/${lang}`} target="blank">
+                {currentContent.btnBlog}
+              </a>
+            </button>
+            <ContactButton lang={lang} />
           </div>
         </div>
       </>
