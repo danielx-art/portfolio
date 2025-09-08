@@ -53,7 +53,7 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
     <section className={cn("h-[90dvh]", className)}>
       <>
         <div className="absolute my-auto p-2 inset-0 sm:inset-[10%] mx-auto flex flex-col items-center max-w-[600px] justify-center h-fit max-h-screen z-10 overflow-show gap-4">
-          <div className="flex flex-col px-16 sm:px-0 sm:self-center select-none text-text font-fira">
+          <div className="flex flex-col px-8 sm:px-0 sm:self-center select-none text-text font-fira">
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
               <div className="flex flex-col">
                 <span className="font-bold text-3xl">
@@ -71,7 +71,7 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
               {currentContent.text}
             </span>
           </div>
-          <div className="flex justify-center sm:w-full select-none mt-2 gap-4">
+          <div className="flex flex-wrap justify-center items-center sm:w-full select-none mt-2 pb-20 gap-4">
             <button
               className="boidsReactBtn flex flex-nowrap px-4 py-2 rounded-sm font-fira font-bold text-lg  
              text-background hover:text-primary 
@@ -84,13 +84,13 @@ export const Hero: React.FC<HeroProps> = ({ className }) => {
               aria-label={currentContent.btnProjects}
               onClick={handleScrollToProjects}
             >
-              <span className="group-hover:rotate-90 transition-transform duration-300 ease-in-out">
+              <span className="group-hover:rotate-90 transition-transform duration-300 ease-in-out hidden sm:block">
                 {"> "}
               </span>
               <span className="pl-1">{currentContent.btnProjects}</span>
             </button>
             <button
-              className="flex flex-nowrap px-5 py-2 rounded-sm font-fira font-bold text-lg  
+              className="flex h-fit flex-nowrap px-5 py-2 rounded-sm font-fira font-bold text-lg  
              text-primary hover:text-background 
              hover:bg-primary bg-transparent 
              outline-dashed outline-2 hover:outline-transparent outline-primary 
